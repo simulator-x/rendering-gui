@@ -1,0 +1,502 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.hci.uni-wuerzburg.de/ontologies/simx/components/renderer/Gui/Gui.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/components/renderer/Gui/Gui.owl"
+     versionIRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/components/renderer/Gui/Gui20140429.owl">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://localhost:8080/components/renderer/SimxRenderer.owl</Import>
+    <Declaration>
+        <Class IRI="#CircularProgressBar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gui"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GuiEffect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GuiElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IsDraggable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IsElastic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IsLoot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Layer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NotificationLinearOffset"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NotificationLinearVelocity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PosX"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PosY"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShaderColor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShaderDurationInSec"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShaderRadiusInMeter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TangibleList"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_CircularProgressBarDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_GuiEffectDescription"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_GuiElementDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_IsDraggableDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_IsElasticDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_IsLootDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_LayerDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_NotificationLinearOffsetDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_NotificationLinearVelocityDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_PosXDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_PosYDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_ShaderColorDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_ShaderDurationInSecDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_ShaderRadiusInMeterDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_ShapeDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SimxGui_TangibleListDesc"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#simx.components.renderer.gui.Shape"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#CircularProgressBar"/>
+        <Class IRI="#GuiEffect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gui"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicTypes.owl#GraphicsComponent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GuiEffect"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Aspect"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GuiEffect"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GuiElement"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GuiElement"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/components/renderer/SimxRenderer.owl#ComputerGraphics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IsDraggable"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IsElastic"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IsLoot"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Layer"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NotificationLinearOffset"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NotificationLinearVelocity"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PosX"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PosY"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShaderColor"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/components/renderer/SimxRenderer.owl#Color"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShaderDurationInSec"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShaderRadiusInMeter"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TangibleList"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicTypes.owl#Shape"/>
+        <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#Property"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Gui"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#Gui"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#CircularProgressBar"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_CircularProgressBarDesc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#GuiEffect"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_GuiEffectDescription"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#GuiElement"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_GuiElementDesc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#IsDraggable"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_IsDraggableDesc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#IsElastic"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_IsElasticDesc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#IsLoot"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_IsLootDesc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#Layer"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_LayerDesc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#NotificationLinearOffset"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_NotificationLinearOffsetDesc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#NotificationLinearVelocity"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_NotificationLinearVelocityDesc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#PosX"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_PosXDesc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#PosY"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_PosYDesc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#ShaderColor"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_ShaderColorDesc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#ShaderDurationInSec"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_ShaderDurationInSecDesc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#ShaderRadiusInMeter"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_ShaderRadiusInMeterDesc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicTypes.owl#Shape"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_ShapeDesc"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#describesProperty"/>
+            <Class IRI="#TangibleList"/>
+        </ObjectSomeValuesFrom>
+        <NamedIndividual IRI="#SimxGui_TangibleListDesc"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#SirisCore_ComponentDescription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxGui_CircularProgressBarDesc"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#SirisCore_EntityDescription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_CircularProgressBarDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxGui_GuiEffectDescription"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#SirisCore_EntityDescription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_GuiEffectDescription"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_GuiElementDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxGui_IsDraggableDesc"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#SirisCore_BooleanDescription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_IsDraggableDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxGui_IsElasticDesc"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#SirisCore_BooleanDescription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_IsElasticDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxGui_IsLootDesc"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#SirisCore_BooleanDescription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_IsLootDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxGui_LayerDesc"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#SirisCore_IntegerDescription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_LayerDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxGui_NotificationLinearOffsetDesc"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#SirisCore_RealDescription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_NotificationLinearOffsetDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxGui_NotificationLinearVelocityDesc"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#SirisCore_BooleanDescription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_NotificationLinearVelocityDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxGui_PosXDesc"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#SirisCore_RealDescription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_PosXDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxGui_PosYDesc"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#SirisCore_RealDescription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_PosYDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxGui_ShaderColorDesc"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#SirisCore_Vector4fDescription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_ShaderColorDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxGui_ShaderDurationInSecDesc"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#SirisCore_TimeInSecondsDesc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_ShaderDurationInSecDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxGui_ShaderRadiusInMeterDesc"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#SirisCore_RealDescription"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_ShaderRadiusInMeterDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_ShapeDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#hasDataType"/>
+        <NamedIndividual IRI="#SimxGui_ShapeDesc"/>
+        <NamedIndividual IRI="#simx.components.renderer.gui.Shape"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#basedOn"/>
+        <NamedIndividual IRI="#SimxGui_TangibleListDesc"/>
+        <NamedIndividual IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/concepts/BasicDescriptions.owl#SirisCore_IdentifiersDesc"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#forComponent"/>
+        <NamedIndividual IRI="#SimxGui_TangibleListDesc"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="http://www.hci.uni-wuerzburg.de/ontologies/simx/SimxCoreOntology.owl#inPackage"/>
+        <NamedIndividual IRI="#SimxComponent_Gui"/>
+        <Literal datatypeIRI="&xsd;string">simx.components.renderer.gui</Literal>
+    </DataPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
